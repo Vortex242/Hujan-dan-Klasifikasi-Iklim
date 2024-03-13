@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=3.0">
+    <title>hello word</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="scene">
+        <div class="moon"></div> 
+        <Div class="benner">
+            <div class="clouds">
+                <img src="cloud1.png" style="--i:1;">
+                <img src="cloud2.png" style="--i:2;">
+                <img src="cloud3.png" style="--i:3;">
+                <img src="cloud4.png" style="--i:4;">
+                <img src="cloud5.png" style="--i:5;">
+                <img src="cloud1.png" style="--i:10;">
+                <img src="cloud2.png" style="--i:9;">
+                <img src="cloud3.png" style="--i:8;">
+                <img src="cloud4.png" style="--i:7;">
+                <img src="cloud5.png" style="--i:6;">
+            </div>
+            <h2 id="text"><Span>Hujan Dan </Span><br>Klasifikasi Iklim</h2>
+         </div>
+         
+        </div>
+        <header id="header">
+            <a href="#title000" class="logo">Kelompok 3 </a>
+            <ul> 
+                <li><a href="#text" class="active">Home</a></li>
+                <li><a href="#title0">Hujan</a></li>
+                <li><a href="#title00">Iklim</a></li>
+                <li><a href="#title000">Team</a></li>
+            </ul>
+        </header>
+        </div>
+    </div>
+
+ 
+    
+    <script type="text/javascript">
+    function stars(){
+        let count = 500;
+        let scene = document.querySelector('.scene');
+        let i = 0;
+        while (i < count){
+            let star = document.createElement("i");
+            let x = Math.floor(Math.random() *window.innerWidth);
+            let y = Math.floor(Math.random() *window.innerHeight);
+            let duration = Math.random() * 10;
+            let size = Math.random () * 2;
+            
+            star.style.left = x+'px';
+            star.style.top = y+'px';
+            star.style.width = 1+size+'px';
+            star.style.height = 1+size+'px';
+
+            star.style.animationDuration = 5+duration+'s';
+            star.style.animationDelay = duration+'s';
+
+
+            scene.appendChild(star);
+            i++
+        }
+    }
+    stars();
+ </script>
+    
+
+<div class="sec">
+
+    <div class="container">
+        <div class="cloud"> </div></div>
+
+<h3 id="title0"> Hujan</h3>
+<div class="container2">
+    <div class="boxt2">
+        <h3 id="title2"> Dampak </h3>
+        <p id="text2">Hujan berperan penting dalam beberapa sektor contohnya pertanian, hujan dapat membantu pengairan tanaman karena hujan dianggap cara mengairi tumbuhan paling efektif, namun
+            terlalu banyaknya terjadi hujan di satu wilayah dapat membahyakan bahkan cenderung merusak panen. Hujan yang ekstrem juga dapat membahyakan kehidupan manusia, karena 
+            hujan juga dapat memicu bencana-bencana lainya seperti banjir,tanah longsor,pohon tumbang dan lain sebagainya.
+         </p>
+    </div>
+</div>
+<div class="container3">
+    <div class="image1"> 
+     <img src="hujan.gif">
+     <h3 id="desk1">Prakiraan hujan untuk Jepang Selatan dan sekitarnya pada 20–27 Juli 2009</h3>
+    </div>
+</div>
+<div class="container1">
+        <div class="boxt1">
+            <h3 id="title1"> Hujan</h3>
+            <p id="text1">Hujan merupakan sebuah <a href="https://id.wikipedia.org/wiki/Presipitasi_(meteorologi)">presipitasi</a> berwujud cairan dari lapisan troposfer ke permukaan bumi.
+             Di Bumi, hujan adalah proses <a href="https://id.wikipedia.org/wiki/Kondensasi">kondensasi</a> uap air di atmosfer menjadi butiran air yang cukup berat
+             untuk jatuh di daratan Bumi. Dua proses tersebut dapat terjadi bersamaan yang mendorong udara semakin jenuh
+             menjelang hujan, yaitu pendinginan udara atau penambahan uap air ke udara, maka dari itu hujan juga dapat 
+             mempengaruhi suhu di wilayah tertentu. Butiran hujan memiliki ukuran yang beragam mulai dari pepat, mirip
+             penekuk (butiran besar), hingga bola kecil (butiran kecil).</p>
+        </div>
+</div>
+
+<div class="container4">
+        <div class="boxt3">
+            <h3 id="title3">Faktor Tingkat Curah Hujan</h3>
+            <p id="text3"> Setiap wilayah mempunyai perbedaan tingkat curah hujan. Hal ini deisebabkan oleh beberapa faktor berikut: 
+               <br> 1. Letak daerah konvegrensi antartropika.
+               <br>2. Bentuk permukaan bumi dan arah lereng.
+                <br>3. Arah angin yang sejajar dengan pantai.
+                <br>4. Jarak perjalanan angin di atas permukaan bumi.
+            </p>
+        </div>
+    </div>
+<div class="container5">
+        <div class="image2"> 
+         <img src="pengukur.png">
+         <h3 id="desk2">Alat pengukur curah hujan (posrain)</h3>
+       </div>
+    </div>
+<div class="earth">
+    <img src="earth.gif" >
+</div>
+    <script>
+        function rain(){
+            let cloud = document.querySelector(".cloud");
+            let e = document.createElement("div");
+            let left = Math.floor(Math.random() *310);
+            let width = Math.floor() *5;
+            let height = Math.floor() *50;
+            let duration = Math.floor() *0.5;
+
+            e.classList.add("drop");
+            cloud.appendChild(e);
+            e.style.left = left + 'px';
+            e.style.width = 0.5+width + 'px';
+            e.style.height = 0.5+height + 'px';
+            e.style.animationDuration = 1+duration + 's';
+
+
+
+            setTimeout(function(){
+                cloud.removeChild(e)
+            },2000)
+
+        }
+
+    setInterval(function() {
+        rain()
+
+    },20);
+    </script>
+</div>
+<div class="sec2">
+    <div class="container41">
+        <div class="boxt31">
+            <h3 id="title31">Jenis-Jenis Hujan Berdasarkan Prosesnya</h3>
+        </div>
+    </div>
+    <div class="container6">
+        <div class="image3"> 
+         <img src="zenithal.jpg">
+         <h3 id="desk5">zenithal</h3>
+       </div>
+    </div>
+    <div class="container21">
+        <div class="boxt21">
+            <h3 id="title21"> Hujan Zenithal </h3>
+            <p id="text21">Hujan yang terjadi di daerah khatulistiwa karena pertemuan antara angin pasat timur dan angin pasat tenggara disebut Hujan Zenithal,
+                hujan ini terjadi pada siang hari saat matahari tepat di atas kepala, hal itu membuat hujan ini terkenal unik, hujan ini memiliki sifat yang
+                sangat lebat,banyak guntur,dan disertai angin serta sering terjadi di daerah dengan iklim tropis.
+             </p>
+        </div>
+    </div>
+    <div class="container7">
+        <div class="image5">
+            <img src="orografis.jpg">
+            <h3 class="desk4">hujan Orografis</h3>
+        </div>
+    </div>
+    <div class="container22">
+        <div class="boxt22">
+            <h3 id="title22"> Hujan Orografis </h3>
+            <p id="text22">Hujan ini terjadi karena angin yang kaya uap air naik ke pegunungan,proses ini akan membentuk awan dan terjadilah kondensasi
+                dan membentuk awan setelah itu turun hujan, hujan ini adalah hujan yang paling sering terjadi (umum), ciri dari hujan ini biasanya terjadi di 
+                dataran tinggi seperti pegunungan.
+             </p>
+        </div>
+    </div>
+    <div class="container8">
+        <div class="image6">
+            <img src="frontal.jpg">
+            <h3 class="desk4">hujan frontal</h3>
+        </div>
+    </div>
+    <div class="container23">
+        <div class="boxt23">
+            <h3 id="title23"> Hujan Frontal </h3>
+            <p id="text23"> Jika massa udara yang bersifat panas yang mengandung banyak uap air bertemu dengan massa udara yang bersifat dingin maka terjadilah Hujan yang disebut
+                Hujan Frontal, proses bertemunya kedua sifat udara tersebut menyebabkan terjadinya kondensasi sehingga turun hujan, hujan ini biasanya terjadi
+                di daerah yang beriklim sedang.
+             </p>
+        </div>
+    </div>
+</div>
+
+<div class="sec3">
+    <div class="container42">
+        <div class="boxt32">
+            <h3 id="title32">Proses Terjadinya Hujan</h3>
+            <p id="text32"> Tahapan-tahapan proses terjadinya hujan sebagai berikut: 
+               <br> 1. Evaporasi, yaitu peristiwa berubahnya air laut menjadi uap air karena adanya sinar matahari
+               <br>2. Kondensasi, Setelah itu, uap air yang terkumpul di langit ditampung oleh awan. Kemudian terjadilah kondensasi, yaitu peristiwa berubahnya uap air menjadi kristal es di awan.
+                <br>3. yaitu peristiwa pencairan awan menjadi butiran air. Butiran air dari awan yang jatuh ke dataran disebut sebagai hujan. Air hujan yang jatuh ke dataran kemudian kembali lagi ke tanah, sungai, danau, hingga laut. Lalu berulang lagi ketiga tahapan itu sampai terjadi hujan lagi
+
+            </p>
+        </div>
+    </div>
+    <div class="container9">
+        <div class="image7">
+            <img src="proses.gif">
+            <h3 class="desk4">Proses terjadinya hujan</h3>
+        </div>
+
+    </div>
+</div>
+<div class="sec4">
+<h3 id="title00"> IKlim</h3>
+    <div class="container101">
+        <div class="boxt91">
+            <h3 id="title91">Klasifikasi Iklim </h3>
+            <p id="text91"> Iklim merupakan keadaan rata-rata cuaca berdasarkan waktu yang panjang. Perbedaan iklim di muka bumi dipengaruhi oleh Letak
+                lintang, ketinggian tempat, dan curah hujan. Kondisi iklim suatu wilayah memengaruhi pola kehidupaan manusia di wilayah tersebut. Klasifikasi
+                iklim sendiri dikenal dengan 3 teori.
+            </p>
+        </div>
+   </div>
+    <div class="container10">
+        <div class="boxt9">
+            <h3 id="title9">Klasifikasi Iklim Matahari</h3>
+            <p id="text9"> Klasifikasi iklim matahari berdasarkan posisi garis lintang suatu wilayah. Akibat dari penyinaran matahari yang diterima di bumi. 
+                Garis lintang di bumi dibagi menjadi dua bagian, yaitu 0°- 90° LU dan 0° - 90° LS. Daerah 0 lintang adalah daerah panas. Daerah makin mendekati 90° lintang suhu semakin dingin. Secara teoritis, semakin jauh suatu tempat dari khatulistiwa,
+                semakin besar sudut datang sinar matahari. ini berarti semakin sedikit pula jumlah sinar matahari yang diterima oleh permukaan bumi. Maka Daerah 0° lintang adalah daerah panas, sedangkan daerah makin mendekati 90° lintang suhu semakin dingin.    </p>
+        </div>
+   </div>
+   <div class="container103">
+    <div class="boxt93">
+        <h3 id="title93">Berdasarkan Iklim Matahari</h3>
+        <p id="text93"> Wilayah di bumi dibagi menjadi empat iklim yaitu sebagai berikut.
+            <br>1. Iklim tropis, daerah yang terletak di antara 23,5°LU-13,5°LS.
+            <br>2. Iklim subtropis, daerah yang terletak di antara 12,5°LU-40°LU dan 23,5°LS-40°LS.
+            <br>3. Iklim sedang, daerah yang terletak di antara 40°LU-66,5°LU dan 40°LS-66,5°LS.
+            <br>4. Iklim kutub, daerah yang terletak di titik balik matahari yaitu daerah dengan lintang antara 66,5°LU-90°LU dan 66,5°LS-90°LS.
+
+        </p>
+    </div>
+</div>
+   <div class="mata">
+    <img src="mata.gif" >
+</div>
+    <div class="container11">
+        <div class="boxt10">
+            <h3 id="title10">Menurut Koppen</h3>
+            <p id="text10"> Klasifikasi iklim Koppen dikemukakan oleh Dr. Wladimir Koppen, ahil ilmu iklim dari Jerman pada tahun 1918. Klasifikasi iklim
+                Koppen didasarkan pada kombinasi antara temperatur udara dan curah hujan, serta mempertimbangkan vegetasi dan persebaran tanah.
+                Koppen mengklasifikasikan iklim dunia ke dalam lima jenis iklim utama yang diberi lambang huruf kapital. Setiap tipe iklim terbagi 
+                lagi menjadi beberapa subkelompok dengan huruf kedua huruf kecil.
+                <br>Berdasarkan klasifikasi iklim Koppen, wilayah di Indonesia terdapat beberapa tipe iklim yaitu sebagai berikut
+                <br>1. Iklim At, terdapat di wilayah Sumatra, Kalimantan, Sulawesi, Kepulauan Maluku, dan Papua. 
+                <br>2. Iklim Am, terdapat di wilayah Jawa Tengah, Jawa Barat, Sulawesi, Nusa Tenggara, dan Papua bagian selatan.
+                <br>3. Iklim Aw, terdapat di sebagian Jawa Tengah bagian timur, Jawa Timur, dan Nusa Tenggara. 
+                <br>4. Iklim Cf, terdapat di hutan-hutan daerah pegunungan. 
+                <br>5. Iklim D, terdapat di pegunungan salju Papua.</p>
+        </div>
+    </div>
+</div>
+<div class="sec5">
+</div>
+<div class="sec6">
+        <div class="container12">
+            <div class="boxt11">
+                <h3 id="title11">Menurut Junghun</h3>
+                <p id="text11">
+                    Klasifikasi iklim ini dikemukakan oleh Franz Wilhem Junghuhn, seorang ahli biologi berkebangsaan Jerman ketika sedang melakukan penelitian di Sumatra Selatan dan dataran tinggi Bandung. Klasifikasi ini berdasarkan pada 
+                    ketinggian suatu tempat dan jenis tumbuhan yang cocok tumbuh di suatu daerah. Junghuhn mengklasifikasi daerah iklim di Indonesia secara vertikal sesuai dengan jenis vegetasi yang dapat hidup yaitu sebagai berikut.
+                </p>
+            </div>
+       </div>
+       <div class="container13">
+            <div class="boxt12">
+            <p id="text12">Daerah panas
+                <br> Dengan ketinggian tempat 0-600 meter di atas permukaan laut
+                <br> Suhu rata-rata 22°C-26,3°C. 
+                <br> Jenis vegetasi: padi dan tebu
+                </p>
+            </div>
+       </div>
+       <div class="container14">
+            <div class="boxt13">
+            <p id="text13">Daerah sedang,
+                <br>Dengan ketinggian tempat 600-1.500 meter di atas permukaan laut. 
+                <br>Suhu rata-rata 17.1°C-22°C.
+                <br>Jenis vegetasi: tembakau, kopi, dan cokelat.</p>
+            </div>
+       </div>
+       <div class="container15">
+            <div class="boxt14">
+            <p id="text14">Daerah sejuk, 
+                <br>Dengan ketinggian tempat 1.500-2.500 meter di atas permukaan laut. 
+                <br>Suhu rata-rata 11,1°C-17.1°C. 
+                <br>Jenis vegetasi: kopi, teh, kina, dan sayuran.
+                </p>
+            </div>
+       </div>
+       <div class="container141">
+        <div class="boxt131">
+        <p id="text131">Daerah dingin, 
+            <br>Dengan ketinggian tempat lebih dari 2.500 meter di atas permukaan laut. 
+            <br>Suhu rata-rata 6°C. 
+            <br>Jenis vegetasi: lumut dan tidak ada tanaman budi daya.</p>
+        </div>
+   </div>
+       <div class="container16">
+       <div class="boxt15">
+            <h3 id="title15">Menurut Schmidt dan Ferguson</h3>
+             <p id="text15">Klasifikasi iklim ini berdasarkan pada jumiah curah hujan setiap bulan dalam 1 tahun yang dikenal sebagai rasio bulan basah dan bulan kering. 
+                Dikatakan bulan kering dan bulan basah apabila mempunyal tingkat curah hujan sebagai berikut
+                <br>1. Bulan kering curah hujan sebulan kurang dari 60 mm.
+                <br>2. Bulan lembap curah hujan sebulan antara 60-100 mm. 
+                <br>3. Bulan basah  curah hujan sebulan lebih dari 100 mm.</p>
+            </div>
+        </div>
+</div>     
+<div class="sec7">
+<h3 id="title000"> Hujan</h3>
+    <div class="container412">
+        <div class="boxt312">
+            <h3 id="title312">Anggota
+                <br>Kelompok 3
+            </h3>
+        </div>
+    </div>
+    <div class="container51">
+        <div class="image21"> 
+         <img src="satya.jpg">
+         <h3 id="desk2">Programer
+            <br> Satya Manik (17)
+         </h3>
+       </div>
+    </div>
+    <div class="container52">
+        <div class="image22"> 
+         <img src="bayu.jpg">
+         <h3 id="desk2">Materi Support
+            <br> Bayu Gilang(7)
+         </h3>
+       </div>
+    </div>
+    <div class="container53">
+        <div class="image23"> 
+         <img src="agys.jpg">
+         <h3 id="desk2">Materi Support
+            <br> Agys Purnami(23)
+         </h3>
+       </div>
+    </div>
+    <div class="container54">
+        <div class="image24"> 
+         <img src="andi.jpg">
+         <h3 id="desk2">Materi Support
+            <br> Andi Juniardika(6)
+         </h3>
+       </div>
+    </div>
+    <div class="container55">
+        <div class="image25"> 
+         <img src="andiki.jpg">
+         <h3 id="desk2">Materi Support
+            <br> Andiki Pratama (8)
+         </h3>
+       </div>
+    </div>
+    <div class="container56">
+        <div class="image26"> 
+         <img src="satria.jpg">
+         <h3 id="desk2">Materi Support
+            <br> Satria Adi (40)
+         </h3>
+       </div>
+    </div>
+    <div class="container57">
+        <div class="image27"> 
+         <img src="mangde.jpg">
+         <h3 id="desk2">Materi Support
+            <br> Radhitya Wirya (9)
+         </h3>
+       </div>
+    </div>
+    <div class="container58">
+        <div class="image28"> 
+         <img src="Krisna.jpg">
+         <h3 id="desk2">Materi Support
+            <br> Krisna Adi (19)
+         </h3>
+       </div>
+    </div>
+</div>
+</body>
+</html>
